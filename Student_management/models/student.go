@@ -27,3 +27,8 @@ func NewStudent(id, name string, age int, class string) *Student{
 		Marks:    make(map[string]int),
 	}
 }
+
+// METHOD - GPA update
+function (s *Student) UpdateGPA(newGPA float64) error{
+
+}
