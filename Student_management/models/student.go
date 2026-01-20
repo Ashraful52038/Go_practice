@@ -39,7 +39,7 @@ function (s *Student) UpdateGPA(newGPA float64) error{
 
 // METHOD - Add new subject
 func (s *Student) AddSubject(sunject string ){
-	for _, existingSubject := range s.Subjects{
+	for i, existingSubject := range s.Subjects{
 		if existingSubject == subject {
 			return
 		}
